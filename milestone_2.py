@@ -13,7 +13,9 @@ print(word)
 
 guess = input("Please enter a single letter ")
 
-print(type(guess))
 
-if len(guess) == 1:
+
+if len(guess) == 1 and type(guess) == str:
     print("Goess guess! ")
+else:
+    print("Oops that is not a valid input")
